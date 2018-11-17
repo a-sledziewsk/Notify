@@ -8,14 +8,18 @@ import android.widget.Toast;
 public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+        NotificationHelper notify = new NotificationHelper(context);
 
-//        String productName = intent.getStringExtra("Product name");
-//        String quantity = intent.getStringExtra("Quantity");
-//        String price = intent.getStringExtra("Price");
-//        String msg = quantity + " " + productName + " added " + "with cost of " + price + " each.";
+        String productName = intent.getStringExtra("Product name");
+        String quantity = intent.getStringExtra("Quantity");
+        String price = intent.getStringExtra("Price");
 
-//        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
-        Toast.makeText(context, "OOOPA", Toast.LENGTH_SHORT).show();
+        String msg = "Product name: " + productName + "\t\t\tQuantity: "
+                + quantity +"\t\t\tPrice: " + price
+                +"$";
+
+        notify.createNotification("New product added!",msg);
+
 
     }
 }

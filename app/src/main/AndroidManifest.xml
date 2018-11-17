@@ -6,6 +6,7 @@
     <uses-permission android:name="com.example.adam.mini_projekt_1.permission.MY_PERMISSION"
         android:maxSdkVersion="26" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

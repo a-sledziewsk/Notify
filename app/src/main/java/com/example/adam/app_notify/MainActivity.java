@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         IntentFilter intentFilter = new IntentFilter(myIntent);
         intentFilter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY-1);
-        registerReceiver(mbr, intentFilter);
+        registerReceiver(mbr, intentFilter, permission, null);
     }
     @Override
     protected void onStart() {
         super.onStart();
         IntentFilter intentFilter = new IntentFilter(myIntent);
         intentFilter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY-1);
-        registerReceiver(mbr, intentFilter);
+        registerReceiver(mbr, intentFilter, permission, null);
     }
 
 }

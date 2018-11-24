@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.adam.app_notify">
 
-    <uses-permission android:name="com.example.adam.mini_projekt_1.permission.MY_PERMISSION"
-        android:maxSdkVersion="26" />
+    <uses-permission android:name="com.example.adam.mini_projekt_1.permission.MY_PERMISSION" />
 
 
     <application
